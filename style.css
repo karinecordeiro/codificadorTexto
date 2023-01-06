@@ -1,0 +1,106 @@
+:root{
+    --main_color: #5bcaaf;
+    --light: #f6f6f6;
+    --dark: #302c2c;
+}
+body{
+    background-color: var(--light);
+    font-family: 'Nunito', sem serifa;
+}
+/*cabeçalho*/
+.cabecalho{
+    margin-left: 2.5rem;
+}
+.cabecalho_imagem{
+    width: 250px;
+}
+
+/*principal*/
+.container_main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*esquerda*/
+.container_left{
+    background-color: var(--light);
+    border: 0.05rem solid;
+    border-color: var(--main_color);
+    border-radius: 0.25rem;
+    padding: 2rem;
+}
+.textarea{
+    background-color: var(--light);
+    border: none;
+    border-radius: 0.25rem;
+    font-family: 'Nunito', sem serifa;
+    font-size: 18px;
+    height: 300px;
+    padding: 15px;
+    width: 500px;
+}
+.message{
+    color: var(--dark);
+    font-family: 'Nunito', sem serifa;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    text-transform:lowercase;
+}
+.position_button{
+    display: flex;
+    justify-content: space-around;
+}
+.button{
+    background-color:var(--main_color);
+    border: 0.05rem solid;
+    border-radius: 0.6rem;
+    color: var(--light);
+    font-family: 'Nunito', sem serifa;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 1rem;
+    padding: 5px 20px;
+}
+.button:hover{
+    background-color:var(--light);
+    border: 0.05rem solid;
+    border-color: var(--main_color);
+    color: var(--main_color);
+    font-family: 'Nunito', sem serifa;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 1rem;
+    padding: 5px 20px;
+}
+
+/*direita*/
+.container_right{
+    border: 0.05rem solid;
+    border-color: var(--main_color);
+    border-radius: 0.25rem;
+    padding: 2rem;
+    text-align: center;
+}
+.space_message{
+    color: var(--dark);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+.spam_message{
+    color: var(--dark);
+    font-size: 10px;
+    font-weight: 600;
+    padding: 10px 20px;
+    width: 250px;
+} 
+
+/*rodapé*/
+.footer{
+    color: var(--dark);
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: 2rem;
+    text-align: center
+} 
