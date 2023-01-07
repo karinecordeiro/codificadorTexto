@@ -20,24 +20,26 @@
 
         <section class="container_left">
             <article class="">
-                <textarea class="textarea" id="input_text" placeholder="Digite seu texto aqui..."></textarea>
+                <textarea class="textarea" id="inputText" placeholder="Digite seu texto aqui..."></textarea>
                 <p class="message"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> digite apenas em letras maiúsculas, sem acentos ou caracteres especiais.</p>
             </article>
             <article class="position_button">
-                <button id="codificar" class="button">codificador</button>
-                <button id="decodificar" class="button">decodificador</button>
+                <button class="button" onclick="codificar()">codificador</button>
+                <button class="button" onclick="decodificar()">decodificador</button>
             </article>
         </section>
         
         <section class="container_right">
-            <img src="/assets/img/imgCodificador.svg" alt="imagem codificador">
-            <h2 class="space_message">Seu texto irá aparecer aqui!</h2>
-            <h3 class="spam_message">Digite algo que você queira codificar ou decodificar na caixa ao lado.</h3>
-            <!-- <button id="copiar" class="button">copiar</button> -->
+            <article id="outputText">
+                <img src="/assets/img/imgCodificador.svg" alt="imagem codificador">
+                <h2 class="space_message">Seu texto irá aparecer aqui!</h2>
+                <h3 class="spam_message">Digite algo que você queira codificar ou decodificar na caixa ao lado.</h3>
+            </article>
         </section>
         
     </main>
 
     <footer class="footer">&copy 2023 | Desenvolvido por Kacord</footer>
 </body>
+    <script src="/script.js"></script>
 </html>

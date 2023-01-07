@@ -3,9 +3,11 @@
     --light: #f6f6f6;
     --dark: #302c2c;
 }
+*{
+    font-family: 'Nunito', sem serifa;
+}
 body{
     background-color: var(--light);
-    font-family: 'Nunito', sem serifa;
 }
 /*cabeçalho*/
 .cabecalho{
@@ -27,13 +29,13 @@ body{
     border: 0.05rem solid;
     border-color: var(--main_color);
     border-radius: 0.25rem;
+    height: 420px;
     padding: 2rem;
 }
 .textarea{
     background-color: var(--light);
     border: none;
     border-radius: 0.25rem;
-    font-family: 'Nunito', sem serifa;
     font-size: 18px;
     height: 300px;
     padding: 15px;
@@ -41,8 +43,7 @@ body{
 }
 .message{
     color: var(--dark);
-    font-family: 'Nunito', sem serifa;
-    font-size: 10px;
+    font-size: 11.5px;
     font-weight: 600;
     text-align: center;
     text-transform:lowercase;
@@ -56,7 +57,6 @@ body{
     border: 0.05rem solid;
     border-radius: 0.6rem;
     color: var(--light);
-    font-family: 'Nunito', sem serifa;
     font-size: 15px;
     font-weight: 600;
     margin-top: 1rem;
@@ -67,7 +67,6 @@ body{
     border: 0.05rem solid;
     border-color: var(--main_color);
     color: var(--main_color);
-    font-family: 'Nunito', sem serifa;
     font-size: 15px;
     font-weight: 600;
     margin-top: 1rem;
@@ -79,8 +78,19 @@ body{
     border: 0.05rem solid;
     border-color: var(--main_color);
     border-radius: 0.25rem;
+    height: 420px;
     padding: 2rem;
     text-align: center;
+    width: 275px;
+}
+.textareaOutput{
+    background-color: var(--light);
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 18px;
+    height: 340px;
+    padding: 15px;
+    width: 250px;
 }
 .space_message{
     color: var(--dark);
@@ -90,7 +100,7 @@ body{
 }
 .spam_message{
     color: var(--dark);
-    font-size: 10px;
+    font-size: 11.5px;
     font-weight: 600;
     padding: 10px 20px;
     width: 250px;
