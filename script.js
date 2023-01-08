@@ -6,7 +6,7 @@ function codificar(){
 
     var resultCodificador = text.replace(/E/g, "ENTER").replace(/I/g, "IMES").replace(/A/g, "AI").replace(/O/g, "OBER").replace(/U/g, "UFAT");
 
-    outputText.innerHTML = '<textarea readonly id="inputText" class="textareaOutput">' + resultCodificador + '</textarea>';
+    outputText.innerHTML = '<textarea readonly id="textOutput" class="textareaOutput">' + resultCodificador + '</textarea>' + '<button class="button" id="copiar" onclick="copiar()">Copiar</button>';;
 }
 
 function decodificar(){
@@ -14,16 +14,14 @@ function decodificar(){
 
     var resultDecodificador = text.replace(/ENTER/g, "E").replace(/IMES/g, "I").replace(/AI/g, "A").replace(/OBER/g, "O").replace(/UFAT/g, "U");
 
-    outputText.innerHTML = '<textarea readonly id="inputText" class="textareaOutput">' + resultDecodificador + '</textarea>';
+    outputText.innerHTML = '<textarea readonly id="textOutput" class="textareaOutput">' + resultDecodificador + '</textarea>' + '<button class="button" id="copiar" onclick="copiar()">Copiar</button>';;
 }
 
-// function copiar(){
-//     var textCopy = outputText;
+function copiar(){
+    var textCopy = textOutput;
 
-//     textCopy.select();
+    textCopy.select();
 
-//     document.execCommand('copy');
-//     alert('O texto já foi copiado!')
-// }
-
-// + '<button class="button" id="copiar" onclick="copiar()">Copiar</button>';
+    document.execCommand('copy');
+    alert('O texto já foi copiado!')
+}
