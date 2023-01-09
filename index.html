@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codificador</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="cabecalho">
-        <img class="cabecalho_imagem" src="/assets/img/logo.png" alt="logo-codificador">
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Codificador</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <img class="cabecalho_imagem" src="/assets/img/logo.png" alt="logo-codificador">
+        </header>
 
-    <main class="container_main">
-
-        <section class="container_left">
-            <article class="">
-                <textarea class="textarea" id="inputText" placeholder="Digite seu texto aqui..."></textarea>
-                <p class="message"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> digite apenas em letras maiúsculas, sem acentos ou caracteres especiais.</p>
-            </article>
-            <article class="position_button">
-                <button class="button" onclick="codificar()">codificador</button>
-                <button class="button" onclick="decodificar()">decodificador</button>
-            </article>
-        </section>
-        
-        <section class="container_right">
-            <article id="outputText">
-                <img src="/assets/img/imgCodificador.svg" alt="imagem codificador">
-                <h2 class="space_message">Seu texto irá aparecer aqui!</h2>
-                <h3 class="spam_message">Digite algo que você queira codificar ou decodificar na caixa ao lado.</h3>
-            </article>
-        </section>
-        
-    </main>
-
-    <footer class="footer">&copy 2023 | Desenvolvido por Kacord</footer>
-</body>
-    <script src="/script.js"></script>
+        <main class="container_main">
+            <section class="container_left">
+                <article class="">
+                    <textarea class="textarea" id="inputText" placeholder="Digite seu texto aqui..."></textarea>
+                    <p class="message"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> digite apenas em letras maiúsculas, sem acentos ou caracteres especiais.</p>
+                </article>
+                <article class="position_button">
+                    <button class="button" onclick="codificar()">codificar</button>
+                    <button class="button" onclick="decodificar()">decodificar</button>
+                </article>
+            </section>
+            <section class="container_right">
+                <article id="outputText">
+                    <img classe="space_image" src="/assets/img/imgCodificador.svg" alt="imagem codificador">
+                    <h2 class="space_message">Seu texto irá aparecer aqui!</h2>
+                    <h3 class="spam_message">Digite algo que você queira codificar ou decodificar na caixa ao lado.</h3>
+                </article>
+            </section>
+        </main>
+        <footer class="footer">&copy 2023 | Desenvolvido por Kacord</footer>
+    </body>
+        <script src="/script.js"></script>
 </html>
