@@ -25,3 +25,11 @@ function copiar(){
     document.execCommand('copy');
     alert('O texto já foi copiado!')
 }
+
+//botão checkbox//
+const $html = document.querySelector('html')
+const $checkbox = document.querySelector('#switch')
+
+$checkbox.addEventListener ('change', function(){
+    $html.classList.toggle('dark-mode')
+})
